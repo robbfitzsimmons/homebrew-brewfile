@@ -13,15 +13,8 @@ tap "buo/cask-upgrade"                  # CLI to check for outdated Casks.
 #### CLI / Shell
 brew "automake"							            # Makefiles.
 brew "git"		                          # Version control.
-brew "gnupg"	                          # PGP encryption.
-brew "monkeysphere"                     # Makes PGP keys usable for SSH.
 brew "openssl"	                        # TLS and SSL cryptography library.
-brew "moreutils",                       # Additional coreutil-type Unix utils
-  args: ["without-parallel"]            # (avoid conflict with GNU parallel)
 brew "openssh"                          # SSH secure server access.
-brew "parallel"                         # Run shell processes in parallel.
-brew "pigz"                             # Parallelized gzip compression.
-brew "pv"                               # Pipe viewer; view progress.
 brew "wget"                             # Retrieve content fron web servers.
 brew "zsh"		                          # Zshell, the best terminal.
 brew "zsh-completions"	                # Better auto-completions.
@@ -56,13 +49,14 @@ brew "rbenv"		                        # Ruby version management.
 #### Databases
 brew "mysql"                            # MySQL (and ODBC drivers for MySQL).
 cask "postgres",                       	# PostgreSQL GUI and CLI tools,
-  restart_service: :changed             # plus PostGIS functionality.
+  restart_service: :changed             # restart db service on new version.
+  link: true                            # Adds PostGIS tools (key for R) to PATH.
 brew "redis"		                        # In-memory data store.
 brew "unixodbc"                         # Open database connectivity drivers.
-  brew "freetds",                       # Microsoft SQL Server driver.
-    args: ["with-unixodbc"]
-  brew "psqlodbc"                       # PostgreSQL ODBC driver.
-  brew "sqliteodbc"                     # SQLite ODBC driver.
+brew "freetds",                       # Microsoft SQL Server driver.
+  args: ["with-unixodbc"]
+brew "psqlodbc"                       # PostgreSQL ODBC driver.
+brew "sqliteodbc"                     # SQLite ODBC driver.
 
 #### R
 brew "r"                                # R language (command line support).
@@ -104,7 +98,6 @@ cask "quicklook-json"                   # Preview JSON data files.
 cask "1password-beta"		                # Password and other secure doc storage.
 cask "adobe-creative-cloud"             # Adobe (Photoshop, Illustrator, etc.)
 cask "alfred"			                      # Alternative file search / hotkeys.
-cask "backblaze"                        # Cloud backup GUI.
 cask "balsamiq-mockups"                 # Wireframing tool.
 cask "basecamp"                         # Collaboration tool.
 cask "bartender" 		                    # Rearrange / hide Mac menu bar apps.
@@ -113,14 +106,12 @@ cask "daisydisk"		                    # Hard drive visualization.
 cask "dialpad"                          # VoIP phone system.
 cask "dropbox"			                    # File storage and sync.
 cask "evernote"                         # Note and document storage.
-cask "freeze"                           # Amazon Glacier client.
 cask "google-chrome"		                # Browser, quasi-OS, eater-of-RAM.
+cask "gpg-suite"                        # CLI and prefpane for PGP encryption.
 cask "hazel"			                      # File system automation and cleaning.
 cask "istat-menus"		                  # System status bar.
 cask "kaleidoscope"                     # File diffing tool.
-cask "lumen"                            # Adjusts brightness for screen content.
 cask "little-snitch"		                # Incoming/outgoing request filter.
-brew "nativefier"                       # Create Electron apps from URLs.
 cask "paw"                              # HTTP(S) and REST client.
 cask "parallels"	                      # Virtual machine manager.
 cask "postico"			                    # PostgreSQL database client.
