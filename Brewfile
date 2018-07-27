@@ -28,6 +28,7 @@ brew "heroku"		                        # CLI access to Heroku.
 brew "go"                               # Go language.
 
 #### Geospatial
+brew "cairo"                            # Vector graphics library.
 brew "geos"                             # Geometry engine for simple features.
 brew "protobuf"                         # Protocol buffers (Google Maps format).
 brew "udunits"                          # Conversion of physical units measures.
@@ -52,11 +53,6 @@ cask "postgres",                       	# PostgreSQL GUI and CLI tools,
   restart_service: :changed             # restart db service on new version.
   link: true                            # Adds PostGIS tools (key for R) to PATH.
 brew "redis"		                        # In-memory data store.
-brew "unixodbc"                         # Open database connectivity drivers.
-brew "freetds",                       # Microsoft SQL Server driver.
-  args: ["with-unixodbc"]
-brew "psqlodbc"                       # PostgreSQL ODBC driver.
-brew "sqliteodbc"                     # SQLite ODBC driver.
 
 #### R
 brew "r"                                # R language (command line support).
