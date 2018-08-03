@@ -50,7 +50,7 @@ brew "rbenv"		                        # Ruby version management.
 #### Databases
 brew "mysql"                            # MySQL (and ODBC drivers for MySQL).
 cask "postgres",                       	# PostgreSQL GUI and CLI tools,
-  restart_service: :changed             # restart db service on new version.
+  restart_service: :changed,            # restart db service on new version.
   link: true                            # Adds PostGIS tools (key for R) to PATH.
 brew "redis"		                        # In-memory data store.
 
