@@ -5,37 +5,37 @@
 tap "caskroom/cask"                     # GUI apps.
 tap "caskroom/versions"                 # Alternate versions of Casks.
 tap "caskroom/fonts"                    # Open-source / free font files.
-tap "buo/cask-upgrade"                  # CLI to check for outdated Casks.
+tap "caskroom/drivers"					# Software drivers (printers, etc.)
 
 ## DEVELOPMENT ENVIRONMENT
 ### Common development environment dependencies.
 
 #### CLI / Shell
-brew "automake"							            # Makefiles.
-brew "git"		                          # Version control.
+brew "automake"							# Makefiles.
+brew "git"		                        # Version control.
 brew "openssl"	                        # TLS and SSL cryptography library.
 brew "openssh"                          # SSH secure server access.
 brew "wget"                             # Retrieve content fron web servers.
-brew "zsh"		                          # Zshell, the best terminal.
+brew "zsh"		                        # Zshell, the best terminal.
 brew "zsh-completions"	                # Better auto-completions.
 brew "zsh-syntax-highlighting"          # Colorize Zsh.
 
 #### DevOps
-brew "awscli"		                        # CLI access to Amazon Web Services.
-brew "heroku"		                        # CLI access to Heroku.
+brew "awscli"		                    # CLI access to Amazon Web Services.
+brew "heroku"		                    # CLI access to Heroku.
 
 #### Go
 brew "go"                               # Go language.
 
 #### Geospatial
-brew "cairo"                            # Vector graphics library.
 brew "geos"                             # Geometry engine for simple features.
-brew "protobuf"                         # Protocol buffers (Google Maps format).
+brew "gdal"								# 
+brew "proj"
 brew "udunits"                          # Conversion of physical units measures.
 
 #### JavaScript
-brew "node"		                          # Node JS runtime.
-brew "nvm"		                          # Node version manager.
+brew "node"		                        # Node JS runtime.
+brew "nvm"		                        # Node version manager.
 brew "jq"                               # CLI JSON processor.
 
 #### Python
@@ -45,18 +45,15 @@ brew "scipy"                            # Python for scientific operations.
 brew "numpy"                            # Python for math operations.
 
 #### Ruby
-brew "rbenv"		                        # Ruby version management.
+brew "rbenv"		                    # Ruby version management.
 
 #### Databases
-brew "mysql"                            # MySQL (and ODBC drivers for MySQL).
-cask "postgres",                       	# PostgreSQL GUI and CLI tools,
-  restart_service: :changed,            # restart db service on new version.
-  link: true                            # Adds PostGIS tools (key for R) to PATH.
-brew "redis"		                        # In-memory data store.
+brew "postgres"							# SQL database
+brew "redis"		                    # In-memory data store.
 
 #### R
 brew "r"                                # R language (command line support).
-cask "rstudio-preview"			            # IDE for the R language.
+cask "rstudio-preview"			        # IDE for the R language.
 
 #### Swift
 brew "carthage"                         # Manage Swift dependencies.
@@ -71,9 +68,9 @@ cask "vagrant-manager"                  # Access Vagrant boxes via menu bar.
 
 ## DEVELOPER APPS
 ### Software for making software.
-cask "dash"		                          # Developer documentation.
+cask "dash"		                        # Developer documentation.
 cask "iterm2" 	                        # The best console emulator.
-cask "keybase"		                      # Easy PGP-key file sharing.
+cask "keybase"		                    # Easy PGP-key file sharing.
 cask "sublime-text"                     # Text editor.
 
 ## CONVENIENCE AND HELPERS
@@ -91,32 +88,30 @@ cask "quicklook-json"                   # Preview JSON data files.
 
 ## PRODUCTIVITY APPS
 ### The most common Mac desktop apps - browser, file control, etc.
-cask "1password-beta"		                # Password and other secure doc storage.
+cask "1password"		            	# Password and other secure doc storage.
 cask "adobe-creative-cloud"             # Adobe (Photoshop, Illustrator, etc.)
-cask "alfred"			                      # Alternative file search / hotkeys.
-cask "balsamiq-mockups"                 # Wireframing tool.
+cask "alfred"			                # Alternative file search / hotkeys.
 cask "basecamp"                         # Collaboration tool.
-cask "bartender" 		                    # Rearrange / hide Mac menu bar apps.
-cask "chatology"		                    # Save and search iMessage.
-cask "daisydisk"		                    # Hard drive visualization.
-cask "dialpad"                          # VoIP phone system.
-cask "dropbox"			                    # File storage and sync.
+cask "bartender" 		                # Rearrange / hide Mac menu bar apps.
+cask "chatology"		                # Save and search iMessage.
+cask "daisydisk"		                # Hard drive visualization.
+cask "dropbox"			                # File storage and sync.
 cask "evernote"                         # Note and document storage.
-cask "google-chrome"		                # Browser, quasi-OS, eater-of-RAM.
+cask "google-chrome"		            # Browser, quasi-OS, eater-of-RAM.
 cask "gpg-suite"                        # CLI and prefpane for PGP encryption.
-cask "hazel"			                      # File system automation and cleaning.
-cask "istat-menus"		                  # System status bar.
+cask "hazel"			                # File system automation and cleaning.
+cask "istat-menus"		                # System status bar.
 cask "kaleidoscope"                     # File diffing tool.
-cask "little-snitch"		                # Incoming/outgoing request filter.
+cask "little-snitch"		            # Incoming/outgoing request filter.
 cask "paw"                              # HTTP(S) and REST client.
-cask "parallels"	                      # Virtual machine manager.
-cask "postico"			                    # PostgreSQL database client.
+cask "parallels"	                    # Virtual machine manager.
+cask "postico"			                # PostgreSQL database client.
 cask "quickbooks-online"                # Wrapper for accounting web app.
 cask "shimo"                            # OpenVPN client.
-cask "spotify"			                    # Streaming music client.
-cask "superduper"		                    # Bootable clones of your hard drive.
+cask "spotify"			                # Streaming music client.
+cask "superduper"		                # Bootable clones of your hard drive.
 cask "tad"                              # CSV file viewer.
-cask "transmit"			                    # FTP and S3 client.
+cask "transmit"			                # FTP and S3 client.
 brew "youtube-dl"                       # YouTube downloader CLI.
 
 ## MAC APP STORE APPS
@@ -125,19 +120,16 @@ brew "youtube-dl"                       # YouTube downloader CLI.
 ### the MAS setup can't be run for the first time within the Brewfile.
 brew "mas"                              # Mac App Store formulas for brew.
 
-mas "cardhop",        id: 1290358394    # Address book contact manager.
 mas "deliveries",     id: 924726344     # Package and shipment tracker.
-mas "divvy", 		      id: 413857545		  # Tiling window manager.
+mas "divvy", 		  id: 413857545		# Tiling window manager.
 mas "fantastical",    id: 975937182     # Calendar and reminders manager.
-mas "gemini",         id: 1090488118	  # Dedupes files and directories.
+mas "gemini",         id: 1090488118	# Dedupes files and directories.
 mas "ia-writer",      id: 775737590     # Plain text editor.
 mas "paprika",        id: 1303222628    # Recipe manager.
-mas "scratchpad",     id: 1210167684    # Notepad in Notification center.
 mas "tabletool",      id: 1122008420    # Simple CSV editor.
 mas "tweetbot",       id: 557168941     # Twitter client.
 mas "wifi-explorer",  id: 494803304     # Information on wireless networks.
-mas "xcode",          id: 497799835     # Build Mac and iOS apps.
-mas "xscope",	        id: 889428659		  # Pixel sampler and hex code editor.
+mas "xscope",	      id: 889428659		# Pixel sampler and hex code editor.
 
 ## FONTS
 ### Sourced from https://github.com/caskroom/homebrew-fonts where available,
