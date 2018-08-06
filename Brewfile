@@ -3,9 +3,10 @@
 
 ## Taps
 tap "caskroom/cask"                     # GUI apps.
-tap "caskroom/versions"                 # Alternate versions of Casks.
-tap "caskroom/fonts"                    # Open-source / free font files.
 tap "caskroom/drivers"					# Software drivers (printers, etc.)
+tap "caskroom/fonts"                    # Open-source / free font files.
+tap "caskroom/versions"                 # Alternate versions of Casks.
+
 
 ## DEVELOPMENT ENVIRONMENT
 ### Common development environment dependencies.
@@ -13,6 +14,7 @@ tap "caskroom/drivers"					# Software drivers (printers, etc.)
 #### CLI / Shell
 brew "automake"							# Makefiles.
 brew "git"		                        # Version control.
+brew "libgit2"							# Git functions API.
 brew "openssl"	                        # TLS and SSL cryptography library.
 brew "openssh"                          # SSH secure server access.
 brew "wget"                             # Retrieve content fron web servers.
@@ -29,8 +31,8 @@ brew "go"                               # Go language.
 
 #### Geospatial
 brew "geos"                             # Geometry engine for simple features.
-brew "gdal"								# 
-brew "proj"
+brew "gdal"								# Raster / vector geospatial data lib.
+brew "proj"								# Convertsion between carto projections.
 brew "udunits"                          # Conversion of physical units measures.
 
 #### JavaScript
@@ -88,7 +90,7 @@ cask "quicklook-json"                   # Preview JSON data files.
 
 ## PRODUCTIVITY APPS
 ### The most common Mac desktop apps - browser, file control, etc.
-cask "1password"		            	# Password and other secure doc storage.
+cask "1password-beta"		            # Password and other secure doc storage.
 cask "adobe-creative-cloud"             # Adobe (Photoshop, Illustrator, etc.)
 cask "alfred"			                # Alternative file search / hotkeys.
 cask "basecamp"                         # Collaboration tool.
@@ -104,7 +106,6 @@ cask "istat-menus"		                # System status bar.
 cask "kaleidoscope"                     # File diffing tool.
 cask "little-snitch"		            # Incoming/outgoing request filter.
 cask "paw"                              # HTTP(S) and REST client.
-cask "parallels"	                    # Virtual machine manager.
 cask "postico"			                # PostgreSQL database client.
 cask "quickbooks-online"                # Wrapper for accounting web app.
 cask "shimo"                            # OpenVPN client.
