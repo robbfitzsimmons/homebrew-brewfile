@@ -127,22 +127,22 @@ brew "mas"                              # Mac App Store formulas for brew.
 
 mas "cardhop",        id: 1290358394    # Address book contact manager.
 mas "deliveries",     id: 924726344     # Package and shipment tracker.
-mas "divvy", 		  id: 413857545		# Tiling window manager
+mas "divvy", 		      id: 413857545		  # Tiling window manager.
 mas "fantastical",    id: 975937182     # Calendar and reminders manager.
-mas "gemini",         id: 1090488118	# Dedupes files and directories.
+mas "gemini",         id: 1090488118	  # Dedupes files and directories.
 mas "ia-writer",      id: 775737590     # Plain text editor.
+mas "paprika",        id: 1303222628    # Recipe manager.
 mas "scratchpad",     id: 1210167684    # Notepad in Notification center.
 mas "tabletool",      id: 1122008420    # Simple CSV editor.
 mas "tweetbot",       id: 557168941     # Twitter client.
 mas "wifi-explorer",  id: 494803304     # Information on wireless networks.
 mas "xcode",          id: 497799835     # Build Mac and iOS apps.
-mas "xscope",	      id: 889428659		# Pixel sampler and hex code editor.
+mas "xscope",	        id: 889428659		  # Pixel sampler and hex code editor.
 
 ## FONTS
 ### Sourced from https://github.com/caskroom/homebrew-fonts where available,
 ### with licensed fonts sourced from a private Github repo.
 brew "freetype"                         # Font rendering library.
-cask "font-courier-prime-code"          # Courier monospace font.
 cask "font-hasklig"                     # Source Sans fork with ligatures.
 cask "font-montserrat"                  # Sans-serif header font.
 cask "font-nixie-one"                   # Typewriter-style font (Linnaean logo).
