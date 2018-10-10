@@ -30,6 +30,7 @@ brew "heroku"		                    # CLI access to Heroku.
 brew "go"                               # Go language.
 
 #### Geospatial
+brew "cairo"                        # 2D graphics library.
 brew "geos"                             # Geometry engine for simple features.
 brew "gdal"								# Raster / vector geospatial data lib.
 brew "proj"								# Convertsion between carto projections.
