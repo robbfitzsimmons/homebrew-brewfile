@@ -106,6 +106,7 @@ cask "hazel"			                # File system automation and cleaning.
 cask "istat-menus"		                # System status bar.
 cask "kaleidoscope"                     # File diffing tool.
 cask "little-snitch"		            # Incoming/outgoing request filter.
+cask "parallels"                    # Virtual machine manager.
 cask "paw"                              # HTTP(S) and REST client.
 cask "postico"			                # PostgreSQL database client.
 cask "quickbooks-online"                # Wrapper for accounting web app.
