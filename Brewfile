@@ -12,6 +12,7 @@ tap "caskroom/versions"                 # Alternate versions of Casks.
 ### More complex / more-likely-to-be-problematic (e.g. R install) go in VMs.
 
 #### CLI / Shell
+brew "libgit2"							# Git functions API.
 brew "openssl"	                        # TLS and SSL cryptography library.
 brew "openssh"                          # SSH secure server access.
 brew "wget"                             # Retrieve content fron web servers.
@@ -120,7 +121,6 @@ cask "font-hasklig"                   # Source Sans fork with ligatures.
 # brew "go"                             # Go language.
 # brew "automake"							          # Makefiles.
 # brew "git"		                        # Version control.
-# brew "libgit2"							          # Git functions API.
 # brew "carthage"                       # Manage Swift dependencies.
 # brew "freetype"                       # Font rendering library.
 # brew "youtube-dl"                     # YouTube downloader CLI.
