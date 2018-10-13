@@ -34,6 +34,20 @@ brew "python"                           # Python 3.x.
 #### Ruby
 brew "rbenv"		                        # Ruby version management.
 
+#### R
+brew "r"                              	# R language.
+cask "rstudio-preview"			        # IDE for the R language.
+
+#### Geospatial
+##### Note: gdal, and proj are included in Postgres.app PATH.
+# brew "gdal"							# Raster / vector geospatial data lib.
+# brew "proj"             				# Conversion between carto projections.
+brew "geos"                           	# Geometry engine for simple features.
+brew "cairo"                          	# 2D graphics library.
+brew "udunits"                        	# Conversion of physical units measures.
+
+
+
 #### Databases
 cask "postgres"							            # SQL database
 brew "redis"		                        # In-memory data store.
@@ -90,23 +104,19 @@ cask "transmit"			                    # FTP and S3 client.
 ### Run "brew install mas" and "mas signin" before running this portion;
 ### the MAS setup can't be run for the first time within the Brewfile.
 brew "mas"                              # Mac App Store formulas for brew.
-mas "divvy", 		      id: 413857545		  # Tiling window manager.
+mas "divvy", 		  id: 413857545		# Tiling window manager.
 mas "fantastical",    id: 975937182     # Calendar and reminders manager.
-mas "gemini",         id: 1090488118	  # Dedupes files and directories.
+mas "gemini",         id: 1090488118	# Dedupes files and directories.
 mas "tabletool",      id: 1122008420    # Simple CSV editor.
 mas "tweetbot",       id: 557168941     # Twitter client.
+
+## FONTS
+cask "font-hasklig"                   # Source Sans fork with ligatures.
 
 ## UNUSED (for now).
 ### Things that have been in this Brewfile previously, but aren't frequently used.
 ### (Commenting out in an attempt to skinny down my system; uncomment to bring back.)
 ## Brew:
-# brew "r"                              # R language.
-# cask "rstudio-preview"			          # IDE for the R language.
-# brew "cairo"                          # 2D graphics library.
-# brew "geos"                           # Geometry engine for simple features.
-# brew "gdal"								            # Raster / vector geospatial data lib.
-# brew "proj"             							# Conversion between carto projections.
-# brew "udunits"                        # Conversion of physical units measures.
 # brew "go"                             # Go language.
 # brew "automake"							          # Makefiles.
 # brew "git"		                        # Version control.
@@ -122,7 +132,6 @@ mas "tweetbot",       id: 557168941     # Twitter client.
 # cask "osxfuse"                        # Extend macOS file handling to S3.
 # cask "gmvault"                        # CLI to archive / back up Gmail.
 # cask "tad"                            # CSV file viewer.
-# cask "font-hasklig"                   # Source Sans fork with ligatures.
 # cask "font-montserrat"                # Sans-serif header font.
 # cask "font-nixie-one"                 # Typewriter-style font (Linnaean logo).
 
