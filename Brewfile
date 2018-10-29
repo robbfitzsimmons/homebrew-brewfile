@@ -43,6 +43,7 @@ cask "rstudio-preview"			        		# IDE for the R language.
 brew "cairo"                          	# 2D graphics library.
 brew "gdal"															# Raster / vector geospatial data lib.
 brew "geos"                           	# Geometry engine for simple features.
+brew "netcdf"							# Grid-oriented data formats.
 brew "proj"             								# Conversion between carto projections.
 brew "udunits"                        	# Conversion of physical units measures.
 
