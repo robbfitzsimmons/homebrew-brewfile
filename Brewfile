@@ -6,6 +6,7 @@ tap "caskroom/cask"                     # GUI apps.
 tap "caskroom/drivers"					# Software drivers (printers, etc.)
 tap "caskroom/fonts"                    # Open-source / free font files.
 tap "caskroom/versions"                 # Alternate versions of Casks.
+tap "homebrew/services"					# Control services installed via Brew.
 
 ## DEVELOPMENT ENVIRONMENT
 ### Common development environment dependencies.
@@ -28,6 +29,7 @@ brew "heroku"		                    # CLI access to Heroku.
 brew "jq"								# JQuery CLI.
 brew "node"		                        # Node JS runtime.
 brew "nvm"		                        # Node version manager.
+brew "yarn"								# JavaScript package manager.
 
 #### Python
 brew "python2"                          # Python 2.x.
@@ -45,13 +47,14 @@ brew "cairo"                          	# 2D graphics library.
 brew "gdal"								# Raster / vector geospatial data lib.
 brew "geos"                           	# Geometry engine for simple features.
 brew "netcdf"							# Grid-oriented data formats.
-brew "protobuf"							# Protocol buffers
 brew "proj"             				# Conversion between carto projections.
+brew "protobuf"							# Protocol buffers
 brew "udunits"                        	# Conversion of physical units measures.
 
 #### Databases
 brew "postgres"							# SQL database
 brew "redis"		                    # In-memory data store.
+brew "unixodbc"							# Database drivers.
 
 ## VIRTUAL MACHINES
 ### Virtual machine management / reproducibility / portability.
