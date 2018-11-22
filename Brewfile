@@ -114,6 +114,8 @@ mas "fantastical",    id: 975937182     # Calendar and reminders manager.
 mas "gemini",         id: 1090488118	# Dedupes files and directories.
 mas "tabletool",      id: 1122008420    # Simple CSV editor.
 mas "tweetbot",       id: 557168941     # Twitter client.
+mas "xscope",	      id: 889428659		# Pixel sampler and hex code editor.
+
 
 ## FONTS
 cask "font-hasklig"                   	# Source Sans fork with ligatures.
@@ -143,4 +145,3 @@ cask "font-nixie-one"                 	# Typewriter-style font (Linnaean logo).
 # mas "paprika",        id: 1303222628  # Recipe manager.
 # mas "ia-writer",      id: 775737590   # Plain text editor.
 # mas "wifi-explorer",  id: 494803304   # Information on wireless networks.
-# mas "xscope",	        id: 889428659	# Pixel sampler and hex code editor.
