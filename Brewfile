@@ -2,10 +2,10 @@
 # Contains commonly-used applications when provisioning a new Mac.
 
 ## Taps
-tap "caskroom/cask"                     # GUI apps.
-tap "caskroom/drivers"					# Software drivers (printers, etc.)
-tap "caskroom/fonts"                    # Open-source / free font files.
-tap "caskroom/versions"                 # Alternate versions of Casks.
+tap "homebrew/cask"                     # GUI apps.
+tap "homebrew/cask-drivers"				# Software drivers (printers, etc.)
+tap "homebrew/cask-fonts"               # Open-source / free font files.
+tap "homebrew/cask-versions"            # Alternate versions of Casks.
 tap "homebrew/services"					# Control services installed via Brew.
 
 ## DEVELOPMENT ENVIRONMENT
@@ -14,6 +14,7 @@ tap "homebrew/services"					# Control services installed via Brew.
 
 #### CLI / Shell
 brew "libgit2"							# Git functions API.
+brew "libffi"							# C functions interface.
 brew "openssl"	                        # TLS and SSL cryptography library.
 brew "openssh"                          # SSH secure server access.
 brew "wget"                             # Retrieve content fron web servers.
@@ -29,6 +30,7 @@ brew "heroku"		                    # CLI access to Heroku.
 brew "jq"								# JQuery CLI.
 brew "node"		                        # Node JS runtime.
 brew "nvm"		                        # Node version manager.
+brew "v8"								# Chrome JavaScript engine.
 brew "yarn"								# JavaScript package manager.
 
 #### Python
@@ -45,8 +47,10 @@ cask "rstudio-preview"			        # IDE for the R language.
 #### Geospatial
 brew "cairo"                          	# 2D graphics library.
 brew "gdal"								# Raster / vector geospatial data lib.
+brew "gdk-pixbuf"						# Image loading and manipulation.
 brew "geos"                           	# Geometry engine for simple features.
 brew "netcdf"							# Grid-oriented data formats.
+brew "pango"							# Text encoding
 brew "proj"             				# Conversion between carto projections.
 brew "protobuf"							# Protocol buffers
 brew "udunits"                        	# Conversion of physical units measures.
@@ -97,9 +101,11 @@ cask "gpg-suite"                        # CLI and prefpane for PGP encryption.
 cask "istat-menus"		                # System status bar.
 cask "kaleidoscope"                     # File diffing tool.
 cask "little-snitch"		            # Incoming/outgoing request filter.
+cask "mactex"							# LaTex text processor.
 cask "parallels"                        # Virtual machine manager.
 cask "postico"			                # PostgreSQL database client.
 cask "shimo"                            # OpenVPN client.
+cask "slack"							# Group chat, when I must.
 cask "spotify"			                # Streaming music client.
 cask "superduper"		                # Bootable clones of your hard drive.
 cask "transmit"			                # FTP and S3 client.
