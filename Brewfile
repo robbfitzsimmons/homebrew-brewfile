@@ -55,7 +55,7 @@ brew "osmium"							# OpenStreetMap manipulation library.
 brew "pango"							# Text encoding
 brew "proj"             				# Conversion between carto projections.
 brew "protobuf"							# Protocol buffers
-cask "qgis"								# GUI GIS app.
+cask "qgis3"							# GUI GIS app.
 brew "udunits"                        	# Conversion of physical units measures.
 
 #### Databases
