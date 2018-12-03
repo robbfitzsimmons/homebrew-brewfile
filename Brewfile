@@ -7,6 +7,7 @@ tap "homebrew/cask-drivers"				# Software drivers (printers, etc.)
 tap "homebrew/cask-fonts"               # Open-source / free font files.
 tap "homebrew/cask-versions"            # Alternate versions of Casks.
 tap "homebrew/services"					# Control services installed via Brew.
+tap "osgeo/osgeo4mac"					# Open source geospatial software.
 
 ## DEVELOPMENT ENVIRONMENT
 ### Common development environment dependencies.
@@ -50,9 +51,11 @@ brew "gdal"								# Raster / vector geospatial data lib.
 brew "gdk-pixbuf"						# Image loading and manipulation.
 brew "geos"                           	# Geometry engine for simple features.
 brew "netcdf"							# Grid-oriented data formats.
+brew "osmium"							# OpenStreetMap manipulation library.
 brew "pango"							# Text encoding
 brew "proj"             				# Conversion between carto projections.
 brew "protobuf"							# Protocol buffers
+cask "qgis"								# GUI GIS app.
 brew "udunits"                        	# Conversion of physical units measures.
 
 #### Databases
