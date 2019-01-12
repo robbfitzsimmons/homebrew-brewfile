@@ -37,6 +37,7 @@ brew "yarn"								# JavaScript package manager.
 #### Python
 brew "python2"                          # Python 2.x.
 brew "python"                           # Python 3.x.
+brew "pipenv"							# Python package manager.
 
 #### Ruby
 brew "rbenv"		                    # Ruby version management.
@@ -51,7 +52,7 @@ brew "gdal"								# Raster / vector geospatial data lib.
 brew "gdk-pixbuf"						# Image loading and manipulation.
 brew "geos"                           	# Geometry engine for simple features.
 brew "netcdf"							# Grid-oriented data formats.
-brew "osmium"							# OpenStreetMap manipulation library.
+brew "osmium-tool"						# OpenStreetMap manipulation library.
 brew "pango"							# Text encoding
 brew "proj"             				# Conversion between carto projections.
 brew "protobuf"							# Protocol buffers
@@ -118,6 +119,7 @@ cask "transmit"			                # FTP and S3 client.
 ### Run "brew install mas" and "mas signin" before running this portion;
 ### the MAS setup can't be run for the first time within the Brewfile.
 brew "mas"                              # Mac App Store formulas for brew.
+mas "deliveries",     id: 924726344 	# Mail / delivery tracker.
 mas "divvy", 		  id: 413857545		# Tiling window manager.
 mas "fantastical",    id: 975937182     # Calendar and reminders manager.
 mas "gemini",         id: 1090488118	# Dedupes files and directories.
