@@ -56,7 +56,6 @@ brew "osmium-tool"						# OpenStreetMap manipulation library.
 brew "pango"							# Text encoding
 brew "proj"             				# Conversion between carto projections.
 brew "protobuf"							# Protocol buffers
-cask "qgis3"							# GUI GIS app.
 brew "udunits"                        	# Conversion of physical units measures.
 
 #### Databases
@@ -106,7 +105,7 @@ cask "istat-menus"		                # System status bar.
 cask "kaleidoscope"                     # File diffing tool.
 cask "little-snitch"		            # Incoming/outgoing request filter.
 cask "mactex"							# LaTex text processor.
-cask "parallels"                        # Virtual machine manager.
+# cask "parallels"                        # Virtual machine manager.
 cask "postico"			                # PostgreSQL database client.
 cask "shimo"                            # OpenVPN client.
 cask "slack"							# Group chat, when I must.
