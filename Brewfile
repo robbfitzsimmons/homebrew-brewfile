@@ -8,6 +8,7 @@ tap "homebrew/cask-fonts"               # Open-source / free font files.
 tap "homebrew/cask-versions"            # Alternate versions of Casks.
 tap "homebrew/services"					# Control services installed via Brew.
 tap "osgeo/osgeo4mac"					# Open source geospatial software.
+tap "heroku/brew"
 
 ## DEVELOPMENT ENVIRONMENT
 ### Common development environment dependencies.
