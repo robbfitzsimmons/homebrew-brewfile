@@ -124,6 +124,7 @@ cask "optimal-layout" # Keyboard-driven window manager.
 cask "parallels" # Virtual machine manager.
 cask "postico" # PostgreSQL database client.
 cask "quickbooks-online" # Accounting app.
+cask "rescuetime" # Where did my day go?
 cask "screens" # VNC GUI.
 cask "shimo" # OpenVPN client.
 cask "slack" # Group chat, when I must.
