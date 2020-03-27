@@ -79,6 +79,8 @@ brew "redis" # In-memory data store.
 ## VIRTUAL MACHINES
 ### Virtual machine management / reproducibility / portability.
 cask "docker" # Container management.
+brew "whalebrew" # Install Docker images with homebrew.
+
 
 ## DEVELOPER APPS
 ### Software for making software.
