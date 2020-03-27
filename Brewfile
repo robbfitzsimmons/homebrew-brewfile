@@ -120,10 +120,10 @@ cask "kaleidoscope" # File diffing tool.
 cask "little-snitch" # Incoming/outgoing request filter.
 cask "mactex" # LaTex text processor.
 cask "mailplane" # Gmail GUI.
-cask "optimal-layout" # Keyboard-driven window manager.
 cask "parallels" # Virtual machine manager.
 cask "postico" # PostgreSQL database client.
 cask "quickbooks-online" # Accounting app.
+cask "rectangle" # Keyboard-driven window manager.
 cask "rescuetime" # Where did my day go?
 cask "screens" # VNC GUI.
 cask "shimo" # OpenVPN client.
@@ -138,7 +138,6 @@ cask "transmit" # FTP and S3 client.
 ### the MAS setup can't be run for the first time within the Brewfile.
 brew "mas" # Mac App Store formulas for brew.
 mas "deliveries", id: 924726344 # Mail / delivery tracker.
-mas "divvy", id: 413857545 # Tiling window manager.
 mas "fantastical", id: 975937182 # Calendar and reminders manager.
 mas "gemini", id: 1090488118 # Dedupes files and directories.
 mas "tabletool", id: 1122008420 # Simple CSV editor.
