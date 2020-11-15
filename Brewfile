@@ -20,6 +20,7 @@ brew "openssl" # TLS and SSL cryptography library.
 brew "openssh" # SSH secure server access.
 brew "pkg-config" # Helper tool used when compiling libraries.
 brew "wget" # Retrieve content fron web servers.
+brew "svn" # Subversion version control.
 brew "zsh" # Highly configurable terminal.
 brew "zsh-completions" # Better auto-completions.
 brew "zsh-syntax-highlighting" # Colorize Zsh.
@@ -44,7 +45,6 @@ brew "pyenv-virtualenv" # Virtual environment manager for pyenv.
 brew "rbenv" # Ruby version management.
 
 #### R
-brew "r" # R language.
 cask "rstudio-preview" # IDE for the R language.
 
 #### Geospatial
@@ -86,7 +86,6 @@ cask "google-chrome" # Browser, quasi-OS, eater-of-RAM.
 cask "gpg-suite" # CLI and prefpane for PGP encryption.
 cask "istat-menus" # System status bar.
 cask "kaleidoscope" # File diffing tool.
-cask "little-snitch" # Incoming/outgoing request filter.
 cask "mailplane" # Gmail GUI.
 cask "mullvadvpn-beta" # VPN GUI.
 cask "parallels" # Virtual machine manager.
