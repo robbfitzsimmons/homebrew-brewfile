@@ -105,7 +105,7 @@ cask "vlc" # Swiss army knife media player.
 cask "amazon-chime" # Amazon Chime.
 cask "microsoft-teams" # Microsoft Teams.
 cask "webex-meetings" # Webex.
-cask "zoomus" # Zoom.
+cask "zoom" # Zoom.
 
 ## MAC APP STORE APPS
 ### Install Apps previously purchased through the Mac App Store.
