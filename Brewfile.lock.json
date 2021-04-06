@@ -2,7 +2,7 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "d0e4a4df5dac9d67e6a257abe92f8792a0398c8d"
+        "revision": "ea30d264ff621ab63054f785d81b7e2a8ccb1c96"
       },
       "homebrew/cask-drivers": {
         "revision": "f927092ca7cc1e391fae9533f60ad3136c9f6f89"
@@ -1365,6 +1365,12 @@
         "options": {
           "full_name": "font-jetbrains-mono"
         }
+      },
+      "keka": {
+        "version": "1.2.12",
+        "options": {
+          "full_name": "keka"
+        }
       }
     },
     "mas": {
@@ -1399,9 +1405,9 @@
         "macOS": "10.15.4"
       },
       "big_sur": {
-        "HOMEBREW_VERSION": "3.0.11-33-ga6bbc10",
+        "HOMEBREW_VERSION": "3.0.11-35-gb122288",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "77ddf70fc2bc1cd368b1836e1c0dede1414cfcb9",
+        "Homebrew/homebrew-core": "11b74fcef49c1816fd117bdd8addcd3e4a5d74e2",
         "CLT": "12.4.0.0.1.1610135815",
         "Xcode": "12.0",
         "macOS": "11.2.3"

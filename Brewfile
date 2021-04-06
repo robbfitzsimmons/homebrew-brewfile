@@ -87,6 +87,7 @@ cask "google-chrome" # Browser, quasi-OS, eater-of-RAM.
 cask "gpg-suite" # CLI and prefpane for PGP encryption.
 cask "istat-menus" # System status bar.
 cask "kaleidoscope" # File diffing tool.
+cask "keka" # Archive/extraction tool.
 cask "mailplane" # Gmail GUI.
 cask "mullvadvpn-beta" # VPN GUI.
 cask "parallels" # Virtual machine manager.
