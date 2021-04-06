@@ -45,6 +45,7 @@ brew "pyenv-virtualenv" # Virtual environment manager for pyenv.
 brew "rbenv" # Ruby version management.
 
 #### R
+cask "r" # R language itself
 cask "rstudio-preview" # IDE for the R language.
 
 #### Geospatial
@@ -93,7 +94,6 @@ cask "postico" # PostgreSQL database client.
 cask "quickbooks-online" # Accounting app.
 cask "rectangle" # Keyboard-driven window manager.
 cask "rescuetime" # Where did my day go?
-cask "screens" # VNC GUI.
 cask "slack" # Group chat, when I must.
 cask "spotify" # Streaming music client.
 cask "superduper" # Bootable clones of your hard drive.
@@ -115,9 +115,10 @@ brew "mas" # Mac App Store formulas for brew.
 mas "deliveries", id: 924726344 # Mail / delivery tracker.
 mas "fantastical", id: 975937182 # Calendar and reminders manager.
 mas "gemini", id: 1090488118 # Dedupes files and directories.
+mas "screens", id: 1224268771 # VNC GUI.
+mas "tot", id: 1491071483 # Small text snippet editor.
+mas "tweetbot", id: 557168941 # Twitter client.
 mas "xscope", id: 889428659	# Pixel sampler and hex code editor.
-mas "Tot", id: 1491071483 # Small text snippet editor.
-mas "Tweetbot", id: 557168941 # Twitter client
 
 ## FONTS
 cask "font-hasklig" # Source Sans fork with ligatures.
