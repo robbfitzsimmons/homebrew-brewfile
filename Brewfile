@@ -45,11 +45,11 @@ brew "pyenv-virtualenv" # Virtual environment manager for pyenv.
 brew "rbenv" # Ruby version management.
 
 #### R
-cask "r" # R language itself
-cask "rstudio-preview" # IDE for the R language.
+# cask "r" # R language itself
+cask "rstudio" # IDE for the R language.
 
 #### Geospatial
-brew "gdal" # Raster / vector geospatial data lib.
+# brew "gdal" # Raster / vector geospatial data lib.
 brew "udunits" # Conversion of physical units measures.
 
 #### Databases
@@ -73,12 +73,11 @@ brew "speedtest-cli" # CLI for the Ookla network speed test.
 
 ## PRODUCTIVITY APPS
 ### The most common Mac desktop apps - browser, file control, etc.
-cask "1password-beta" # Password and other secure doc storage.
+cask "1password" # Password and other secure doc storage.
 cask "adobe-creative-cloud" # Adobe (Photoshop, Illustrator, etc.)
 cask "alfred" # Alternative file search / hotkeys.
 cask "basecamp" # Collaboration tool.
 cask "bartender" # Rearrange / hide Mac menu bar apps.
-cask "chatology" # Save and search iMessage.
 cask "daisydisk" # Hard drive visualization.
 cask "dropbox" # File storage and sync.
 cask "droplr" # Screenshot management.
@@ -88,24 +87,22 @@ cask "gpg-suite" # CLI and prefpane for PGP encryption.
 cask "istat-menus" # System status bar.
 cask "kaleidoscope" # File diffing tool.
 cask "keka" # Archive/extraction tool.
+cask "lens" # Kubernetes management.
 cask "mailplane" # Gmail GUI.
-cask "mullvadvpn-beta" # VPN GUI.
+cask "mullvadvpn" # VPN GUI.
 cask "parallels" # Virtual machine manager.
 cask "postico" # PostgreSQL database client.
 cask "quickbooks-online" # Accounting app.
 cask "rectangle" # Keyboard-driven window manager.
 cask "rescuetime" # Where did my day go?
-cask "slack" # Group chat, when I must.
+cask "screens-connect" # VNC client connector.
 cask "spotify" # Streaming music client.
 cask "superduper" # Bootable clones of your hard drive.
 cask "transmit" # FTP and S3 client.
-cask "vlc" # Swiss army knife media player.
 
 ## CONFERENCING APPS
 ### Ugh.
-cask "amazon-chime" # Amazon Chime.
 cask "microsoft-teams" # Microsoft Teams.
-cask "webex-meetings" # Webex.
 cask "zoom" # Zoom.
 
 ## MAC APP STORE APPS
