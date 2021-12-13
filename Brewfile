@@ -28,6 +28,7 @@ brew "zsh-syntax-highlighting" # Colorize Zsh.
 #### DevOps
 brew "awscli" # CLI access to Amazon Web Services.
 brew "tfenv" # Terraform environment manager.
+brew "spack" # Package manager that builds multiple versions and configurations of software. 
 
 #### JavaScript
 brew "jq" # JQuery CLI.
@@ -45,16 +46,11 @@ brew "pyenv-virtualenv" # Virtual environment manager for pyenv.
 brew "rbenv" # Ruby version management.
 
 #### R
-# cask "r" # R language itself
+# R language itself is installed via `spack`.
 cask "rstudio" # IDE for the R language.
 
-#### Geospatial
-# brew "gdal" # Raster / vector geospatial data lib.
-brew "udunits" # Conversion of physical units measures.
-
 #### Databases
-brew "postgres" # SQL database
-brew "postgis" # Postgres GIS support
+cask "postgres-unofficial" # SQL database
 
 ## VIRTUAL MACHINES
 ### Virtual machine management / reproducibility / portability.
@@ -62,7 +58,6 @@ cask "docker" # Container management.
 
 ## DEVELOPER APPS
 ### Software for making software.
-cask "dash" # Developer documentation.
 cask "iterm2" # The best console emulator.
 cask "keybase" # Easy PGP-key file sharing.
 cask "sublime-text" # Text editor.
@@ -80,7 +75,6 @@ cask "basecamp" # Collaboration tool.
 cask "bartender" # Rearrange / hide Mac menu bar apps.
 cask "daisydisk" # Hard drive visualization.
 cask "dropbox" # File storage and sync.
-cask "droplr" # Screenshot management.
 cask "evernote" # Note and document storage.
 cask "google-chrome" # Browser, quasi-OS, eater-of-RAM.
 cask "gpg-suite" # CLI and prefpane for PGP encryption.
@@ -89,6 +83,7 @@ cask "kaleidoscope" # File diffing tool.
 cask "keka" # Archive/extraction tool.
 cask "lens" # Kubernetes management.
 cask "mailplane" # Gmail GUI.
+cask "microsoft-teams" # Microsoft Teams.
 cask "mullvadvpn" # VPN GUI.
 cask "parallels" # Virtual machine manager.
 cask "postico" # PostgreSQL database client.
@@ -99,24 +94,20 @@ cask "screens-connect" # VNC client connector.
 cask "spotify" # Streaming music client.
 cask "superduper" # Bootable clones of your hard drive.
 cask "transmit" # FTP and S3 client.
-
-## CONFERENCING APPS
-### Ugh.
-cask "microsoft-teams" # Microsoft Teams.
 cask "zoom" # Zoom.
 
 ## MAC APP STORE APPS
 ### Install Apps previously purchased through the Mac App Store.
 ### Run "brew install mas" and "mas signin" before running this portion;
 ### the MAS setup can't be run for the first time within the Brewfile.
-brew "mas" # Mac App Store formulas for brew.
-mas "deliveries", id: 924726344 # Mail / delivery tracker.
-mas "fantastical", id: 975937182 # Calendar and reminders manager.
-mas "gemini", id: 1090488118 # Dedupes files and directories.
-mas "screens", id: 1224268771 # VNC GUI.
-mas "tot", id: 1491071483 # Small text snippet editor.
-mas "tweetbot", id: 557168941 # Twitter client.
-mas "xscope", id: 889428659	# Pixel sampler and hex code editor.
+# brew "mas" # Mac App Store formulas for brew.
+# mas "deliveries", id: 924726344 # Mail / delivery tracker.
+# mas "fantastical", id: 975937182 # Calendar and reminders manager.
+# mas "gemini", id: 1090488118 # Dedupes files and directories.
+# mas "screens", id: 1224268771 # VNC GUI.
+# mas "tot", id: 1491071483 # Small text snippet editor.
+# mas "tweetbot", id: 557168941 # Twitter client.
+# mas "xscope", id: 889428659	# Pixel sampler and hex code editor.
 
 ## FONTS
 cask "font-hasklig" # Source Sans fork with ligatures.
