@@ -8,7 +8,6 @@ tap "homebrew/cask-fonts" # Open-source / free font files.
 tap "homebrew/cask-versions"  # Alternate versions of Casks.
 tap "homebrew/services" # Control services installed via Brew.
 tap "buo/cask-upgrade" # Upgrade brew casks via `brew cu`.
-tap "yleisradio/terraforms" # Manage multiple `terraform` installations.
 
 ## DEVELOPMENT ENVIRONMENT
 ### Common development environment dependencies.
@@ -28,7 +27,6 @@ brew "zsh-syntax-highlighting" # Colorize Zsh.
 #### DevOps
 brew "awscli" # CLI access to Amazon Web Services.
 brew "tfenv" # Terraform environment manager.
-brew "spack" # Package manager that builds multiple versions and configurations of software. 
 
 #### JavaScript
 brew "jq" # JQuery CLI.
@@ -46,11 +44,10 @@ brew "pyenv-virtualenv" # Virtual environment manager for pyenv.
 brew "rbenv" # Ruby version management.
 
 #### R
-# R language itself is installed via `spack`.
 cask "rstudio" # IDE for the R language.
 
 #### Databases
-cask "postgres-unofficial" # SQL database
+brew "postgres" # SQL database
 
 ## VIRTUAL MACHINES
 ### Virtual machine management / reproducibility / portability.
@@ -58,6 +55,7 @@ cask "docker" # Container management.
 
 ## DEVELOPER APPS
 ### Software for making software.
+cask "dash" # Developer documentation.
 cask "iterm2" # The best console emulator.
 cask "keybase" # Easy PGP-key file sharing.
 cask "sublime-text" # Text editor.
@@ -82,19 +80,19 @@ cask "istat-menus" # System status bar.
 cask "kaleidoscope" # File diffing tool.
 cask "keka" # Archive/extraction tool.
 cask "lens" # Kubernetes management.
-cask "mailplane" # Gmail GUI.
 cask "microsoft-teams" # Microsoft Teams.
 cask "mullvadvpn" # VPN GUI.
+cask "notion" # Team wiki.
 cask "parallels" # Virtual machine manager.
 cask "postico" # PostgreSQL database client.
-cask "quickbooks-online" # Accounting app.
 cask "rectangle" # Keyboard-driven window manager.
 cask "rescuetime" # Where did my day go?
 cask "screens-connect" # VNC client connector.
-cask "spotify" # Streaming music client.
+cask "slack" # Group chat.
 cask "superduper" # Bootable clones of your hard drive.
 cask "transmit" # FTP and S3 client.
-cask "zoom" # Zoom.
+cask "vlc" # Swiss army knife media player.
+cask "zoom" # Video conferencing.
 
 ## MAC APP STORE APPS
 ### Install Apps previously purchased through the Mac App Store.
@@ -104,10 +102,9 @@ cask "zoom" # Zoom.
 # mas "deliveries", id: 924726344 # Mail / delivery tracker.
 # mas "fantastical", id: 975937182 # Calendar and reminders manager.
 # mas "gemini", id: 1090488118 # Dedupes files and directories.
-# mas "screens", id: 1224268771 # VNC GUI.
-# mas "tot", id: 1491071483 # Small text snippet editor.
-# mas "tweetbot", id: 557168941 # Twitter client.
 # mas "xscope", id: 889428659	# Pixel sampler and hex code editor.
+# mas "Tot", id: 1491071483 # Small text snippet editor.
+# mas "Tweetbot", id: 557168941 # Twitter client
 
 ## FONTS
 cask "font-hasklig" # Source Sans fork with ligatures.
