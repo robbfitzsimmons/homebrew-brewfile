@@ -46,7 +46,7 @@ brew "pyenv-virtualenv" # Virtual environment manager for pyenv.
 brew "rbenv" # Ruby version management.
 
 #### R
-brew "rig" # R installation manager.
+cask "rig" # R installation manager.
 cask "rstudio" # IDE for the R language.
 
 #### Databases
