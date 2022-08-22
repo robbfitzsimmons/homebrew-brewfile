@@ -8,6 +8,8 @@ tap "homebrew/cask-fonts" # Open-source / free font files.
 tap "homebrew/cask-versions"  # Alternate versions of Casks.
 tap "homebrew/services" # Control services installed via Brew.
 tap "buo/cask-upgrade" # Upgrade brew casks via `brew cu`.
+tap "r-lib/rig" # R installation manager.
+tap "robbfitzsimmons/spatial" # Customized spatial libraries.
 
 ## DEVELOPMENT ENVIRONMENT
 ### Common development environment dependencies.
@@ -19,6 +21,7 @@ brew "openssl" # TLS and SSL cryptography library.
 brew "openssh" # SSH secure server access.
 brew "pkg-config" # Helper tool used when compiling libraries.
 brew "wget" # Retrieve content fron web servers.
+brew "robbfitzsimmons/spatial/gdal" # Geospatial data abstraction library.
 brew "svn" # Subversion version control.
 brew "zsh" # Highly configurable terminal.
 brew "zsh-completions" # Better auto-completions.
@@ -26,7 +29,6 @@ brew "zsh-syntax-highlighting" # Colorize Zsh.
 
 #### DevOps
 brew "awscli" # CLI access to Amazon Web Services.
-brew "tfenv" # Terraform environment manager.
 
 #### JavaScript
 brew "jq" # JQuery CLI.
@@ -44,6 +46,7 @@ brew "pyenv-virtualenv" # Virtual environment manager for pyenv.
 brew "rbenv" # Ruby version management.
 
 #### R
+brew "rig" # R installation manager.
 cask "rstudio" # IDE for the R language.
 
 #### Databases
